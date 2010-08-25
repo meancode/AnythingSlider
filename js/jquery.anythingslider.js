@@ -148,7 +148,7 @@
 					}
 				});
 			});
-
+			
 		};
 
 		// Set panel dimensions to either resize content or adjust panel to content
@@ -321,7 +321,7 @@
 			if (base.options.buildNavigation && (base.pages > 1)) {
 				base.$items.each(function(i,el) {
 					var index = i + 1;
-					var $a = $("<a href='#'></a>");
+					var $a = $("<a href='#' style='text-decoration: none;'></a>");
 
 					// If a formatter function is present, use it
 					if (typeof(base.options.navigationFormatter) == "function") {
@@ -381,7 +381,7 @@
 		// Creates the Start/Stop button
 		base.buildAutoPlay = function(){
 
-			base.$startStop = $("<a href='#' class='start-stop'></a>").html(base.playing ? base.options.stopText :  base.options.startText);
+			base.$startStop = $("<a href='#' class='start-stop' style='text-decoration: none;'></a>").html(base.playing ? base.options.stopText :  base.options.startText);
 			base.$el.append(base.$startStop);
 			base.$startStop.click(function(e) {
 				base.startStop(!base.playing);
