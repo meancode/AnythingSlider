@@ -125,3 +125,21 @@ div.anythingSlider .start-stop {
 }
 div.anythingSlider .start-stop.playing { background-color: red; }
 div.anythingSlider .start-stop:hover { background-image: none; }
+
+/*
+    By Ken Edwards: http://github.com/meancode/AnythingSlider
+    based on Dean Sofer fork: http://github.com/ProLoser/AnythingSlider
+*/
+
+.dontflicker {
+    width: 700px;
+    height: 415px;
+    overflow: hidden;
+}
+.dontflicker ul#slider1 {
+    width: 32700px;
+	list-style: none;
+}
+.dontflicker ul#slider1 li {
+    float: left;
+}
